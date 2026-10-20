@@ -1,0 +1,28 @@
+# Configuração específica do grupo e da bancada.
+# Valores nulos devem ser preenchidos apenas com dados medidos/atribuídos.
+group:
+  identifier: null
+
+robot:
+  ip: null
+  model: lite6
+  sdk_units:
+    length: mm
+    angle: deg
+
+safety:
+  # Limites do §3 do LW0.1 para sessões em modo reduzido.
+  reduced_max_joint_speed_deg_s: 54
+  reduced_max_tcp_speed_mm_s: 150
+  # Ordem SDK: [x_max, x_min, y_max, y_min, z_max, z_min], em mm.
+  tcp_boundary_mm: null
+  tcp_load: null
+
+tool:
+  tcp_offset_mm: null
+
+home:
+  joints_deg: null
+
+board:
+  pose: null

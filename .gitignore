@@ -1,0 +1,32 @@
+# Python bytecode and tooling
+__pycache__/
+*.py[cod]
+*.so
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+.coverage
+htmlcov/
+
+# Virtual environments
+.venv/
+venv/
+env/
+ENV/
+
+# Editors and operating-system files
+.vscode/*.code-workspace
+.vscode/.ropeproject/
+.DS_Store
+
+# Local configuration and experimental output
+config/robot.local.yaml
+logs/*
+!logs/.gitkeep
+*.log
+*.csv
+
+# ROS / colcon build products, if ever created accidentally here
+build/
+install/
+log/
