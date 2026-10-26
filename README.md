@@ -1,6 +1,6 @@
 # Robótica — Laboratório 0 | Parte 2
 
-**Mestrado em Engenharia Eletrotécnica e de Computadores**  
+**Mestrado em Engenharia Eletrotécnica e de Computadores**
 Universidade de Coimbra — Ano letivo 2026/2027
 
 ## 1. Sobre o projeto
