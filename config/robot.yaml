@@ -1,10 +1,9 @@
-# Configuração específica do grupo e da bancada.
-# Valores nulos devem ser preenchidos apenas com dados medidos/atribuídos.
+
 group:
   identifier: null
 
 robot:
-  ip: null
+  ip: "127.0.0.1"
   model: lite6
   sdk_units:
     length: mm
