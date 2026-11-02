@@ -1,3 +1,5 @@
+# Exemplo de utilizacao
+# arm = safe_session('192.168.1.xxx')
 
 from xarm.wrapper import XArmAPI
 
