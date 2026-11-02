@@ -29,5 +29,18 @@ try:
     print("Código de retorno (pose):", code_pose)
     print("Pose do robô:", pose)
 
+    # Cinemática direta para a configuração inicial (Pose A)
+    angulos_A = [0, 0, 0, 0, 0, 0]
+
+    codigo_fk, pose_fk = arm.get_forward_kinematics(
+        angulos_A,
+        input_is_radian=False,
+        return_is_radian=False
+    )
+
+    print("Código de retorno FK:", codigo_fk)
+    print("Pose A calculada pelo SDK:", pose_fk)
+
+
 finally:
     arm.disconnect()

@@ -61,7 +61,11 @@ def safe_session(config_path: str | Path = DEFAULT_CONFIG):
     # Importação tardia: validar o YAML não exige o SDK nem rede.
     from xarm.wrapper import XArmAPI
 
-    arm = XArmAPI(ip, is_radian=False)
+    arm = XArmAPI(
+    ip,
+    is_radian=False,
+    check_joint_limit=(ip != "127.0.0.1")
+)
     try:
         _check_code(arm.clean_warn(), "clean_warn")
         _check_code(arm.clean_error(), "clean_error")

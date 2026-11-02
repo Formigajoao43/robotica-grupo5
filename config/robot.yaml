@@ -22,6 +22,7 @@ tool:
 
 home:
   joints_deg: null
+  speed_deg_s: 20
 
 board:
   pose: null
